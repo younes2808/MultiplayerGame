@@ -1,6 +1,12 @@
 using UnityEngine;
 
-public class NewEmptyCSharpScript
+public class Player : MonoBehaviour
 {
-    
+    private void Update()
+        {
+            if (Input.GetKey(KeyCode.W))
+            {
+                Debug.Log("W was pressed.");
+            }
+        }
 }
