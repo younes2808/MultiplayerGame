@@ -18,6 +18,8 @@ public class MainMenuUI : MonoBehaviour
             //Click code
             Application.Quit();
         });
+        //resetting animations
+        Time.timeScale = 1f;
     }
 
 

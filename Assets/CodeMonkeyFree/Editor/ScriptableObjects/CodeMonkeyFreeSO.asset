@@ -14,20 +14,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentVersion: 1.01
   subtype: kitchenchaos
-  lastShownTimestamp: 1782852567
+  lastShownTimestamp: 1783007405
   lastUpdateResponse:
     version: 1.01
     versionUrl: https://unitycodemonkey.com
-  checkedLastUpdateTimestamp: 1782852567
+  checkedLastUpdateTimestamp: 1783007405
   lastQOTDResponse:
-    questionId: 317
-    questionText: What is the significance of January 1st, 1970?
-    answerA: Skyrim Release Date on the Magnavox Odyssey
-    answerB: Start of Unix Time
+    questionId: 318
+    questionText: 'Is this valid code?
+
+      <p>Vector3? targetPosition = new Vector3(10,
+      0, 0);</p>
+
+      <p>Vector3 moveToPosition = targetPosition;</p>'
+    answerA: Yes
+    answerB: No
     answerC: 
     answerD: 
     answerE: 
-  lastQotdTimestamp: 1782852567
+  lastQotdTimestamp: 1783007405
   lastDynamicHeaderResponse:
     topImageUrl: https://codemonkeyexternal.blob.core.windows.net/external/Misc/summer2025CodeMonkeyBundle.png
     topText: Get 80% OFF on ALL my Courses and Games!!!
@@ -35,19 +40,19 @@ MonoBehaviour:
     bottomText: DONT MISS the latest important trends, sign up for my FREE Weekly
       Newsletter!
     bottomLink: gamedevreport
-  lastDynamicHeaderTimestamp: 1782852567
+  lastDynamicHeaderTimestamp: 1783007405
   websiteLatestMessage:
     text: <a href="https://cmonkey.co/freecourses">Check out all my FREE courses!
       Click here!</a>
-  websiteLatestMessageTimestamp: 1782852567
+  websiteLatestMessageTimestamp: 1783007405
   websiteLatestVideos:
     videos:
+    - youTubeId: C9iHZDlnXdk
+      title: BEST NEW Visual Assets to INSPIRE YOU! (APRIL 2026)
     - youTubeId: v2E2OkAYjs4
       title: How to make $50 MILLION Indie Game (MECCHA CHAMELEON)
     - youTubeId: YMZSa1CzQGk
       title: TOP 10 NEW Systems and Tools JUNE 2026! | Unity Asset Store
     - youTubeId: gIECgv6d-1M
       title: How To Make the HOTTEST Game on Next Fest! (IRON NEST)
-    - youTubeId: -c66MXBKCFk
-      title: How to ESCAPE Tutorial HELL!
-  websiteLatestVideosTimestamp: 1782852567
+  websiteLatestVideosTimestamp: 1783007405
