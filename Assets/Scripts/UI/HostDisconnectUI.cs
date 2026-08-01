@@ -5,19 +5,30 @@ using UnityEngine.UI;
 public class HostDisconnectUI : MonoBehaviour
 {
 
+
     [SerializeField] private Button playAgainButton;
+
+
+    private void Awake()
+    {
+        playAgainButton.onClick.AddListener(() =>
+        {
+            Loader.Load(Loader.Scene.MainMenuScene);
+        });
+    }
 
     private void Start()
     {
-        NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_OnClientDisconnect;
+        NetworkManager.Singleton.OnClientDisconnectCallback += NetworkManager_OnClientDisconnectCallback;
 
         Hide();
     }
 
-    private void NetworkManager_OnClientDisconnect(ulong clientId)
+    private void NetworkManager_OnClientDisconnectCallback(ulong clientId)
     {
-        if (NetworkManager.Singleton.LocalClientId == clientId)
+        if (clientId == NetworkManager.ServerClientId)
         {
+            // Server is shutting down
             Show();
         }
     }
