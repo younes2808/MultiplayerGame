@@ -1,10 +1,22 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameOverUI : MonoBehaviour
 {
 
+
     [SerializeField] private TextMeshProUGUI recipesDeliveredText;
+    [SerializeField] private Button playAgainButton;
+
+
+    private void Awake()
+    {
+        playAgainButton.onClick.AddListener(() =>
+        {
+            Loader.Load(Loader.Scene.MainMenuScene);
+        });
+    }
 
     private void Start()
     {
@@ -18,6 +30,7 @@ public class GameOverUI : MonoBehaviour
         if (KitchenGameManager.Instance.IsGameOver())
         {
             Show();
+
             recipesDeliveredText.text = DeliveryManager.Instance.GetSuccesfulRecipesAmount().ToString();
         }
         else
@@ -26,14 +39,16 @@ public class GameOverUI : MonoBehaviour
         }
     }
 
-
     private void Show()
     {
         gameObject.SetActive(true);
+        playAgainButton.Select();
     }
 
     private void Hide()
     {
         gameObject.SetActive(false);
     }
+
+
 }
