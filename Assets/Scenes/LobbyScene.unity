@@ -1146,6 +1146,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShowTopMostFoldoutHeaderGroup: 1
   kitchenObjectListSO: {fileID: 11400000, guid: ba0fc188a746a1a458e22d6f91306245, type: 2}
+  playerColorList:
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 1, g: 0.95895517, b: 0, a: 1}
+  - {r: 1, g: 0.56507945, b: 0, a: 1}
+  - {r: 0.4590907, g: 0, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0.6041374, a: 1}
+  - {r: 0, g: 0.13200235, b: 1, a: 1}
+  - {r: 0.93962264, g: 0.93962264, b: 0.93962264, a: 1}
+  - {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
+  - {r: 0, g: 1, b: 0.028315544, a: 1}
+  - {r: 0.16226411, g: 0.16226411, b: 0.16226411, a: 1}
 --- !u!114 &1309452276
 MonoBehaviour:
   m_ObjectHideFlags: 0
