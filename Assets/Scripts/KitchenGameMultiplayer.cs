@@ -73,10 +73,17 @@ public class KitchenGameMultiplayer : NetworkBehaviour
             clientId = clientId,
             colorId = GetFirstUnusedColorId()
         });
-        SetPlayerNameServerRpc(GetPlayerName());
-        SetPlayerIdServerRpc(AuthenticationService.Instance.PlayerId);
-    }
 
+        if (clientId == NetworkManager.Singleton.LocalClientId)
+        {
+            int playerDataIndex = GetPlayerDataIndexFromClientId(clientId);
+
+            PlayerData playerData = playerDataNetworkList[playerDataIndex];
+            playerData.playerName = GetPlayerName();
+            playerData.playerId = AuthenticationService.Instance.PlayerId;
+            playerDataNetworkList[playerDataIndex] = playerData;
+        }
+    }
     private void NetworkManager_ConnectionApprovalCallback(NetworkManager.ConnectionApprovalRequest connectionApprovalRequest, NetworkManager.ConnectionApprovalResponse connectionApprovalResponse)
     {
         if (SceneManager.GetActiveScene().name != Loader.Scene.CharacterSelectScene.ToString())
